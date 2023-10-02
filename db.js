@@ -1,6 +1,6 @@
 const {MongoClient} = require("mongodb")
 
-const urlConexion = process.env.MONGO_URL // ja nao se pode ler localmente aasim
+const urlConexion = process.env.URL_MONGO // ja nao se pode ler localmente aasim
 function conectar (){
     return MongoClient.connect(urlConexion);       
 }
